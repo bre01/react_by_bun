@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { GitHubUser, GitHubUserAsync } from "./Github";
+import AddColorForm from "./Form";
+import ColorApp from "./ColorApp"; 
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <GitHubUserAsync login="moonhighway" />;
+      </div>
+      <div>
+        <ColorApp></ColorApp> 
+      </div>
     </div>
   );
 }
